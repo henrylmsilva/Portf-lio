@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+}
+
+html {
+  height: 200vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100svh;
+}
+
+h3 {
+  color: #006fff;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+span {
+  color: #006fff;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+/* btn card */
+.Projetos button {
+  border: none;
+  background-color: #006fff;
+  border-radius: 100px;
+  width: 100px;
+  height: 25px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn-card:hover {
+  color: #ffffff;
+  background-color: #003a86;
+}
+
+/* Introdução */
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 1rem;
+  position: fixed;
+}
+
+.Navegacao {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+  z-index: 2;
+  gap: 1rem;
+  display: flex;
+  margin: 0 auto;
+  padding: 2rem 6rem;
+  border-radius: 500px;
+}
+
+.Navegacao li {
+  list-style: none;
+}
+
+.apresentacao {
+  display: flex;
+  flex-direction: row;
+  margin: 0px auto;
+  margin-bottom: 18rem;
+  justify-content: center;
+  padding: 100px;
+  padding-top: 300px;
+  gap: 200px;
+  width: 100%;
+}
+
+.apresentacao-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25vw;
+  height: 20vw;
+}
+
+.imagem {
+  width: 400px;
+  height: 400px;
+}
+
+.icons {
+  width: auto;
+  height: 30px;
+  padding-top: 2px;
+  gap: 10px;
+  display: flex;
+}
+
+.btn-group {
+  padding-top: 6px;
+  gap: 40px;
+  width: 100%;
+  display: flex;
+}
+
+.btn {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+  border-radius: 100px;
+  padding: 10px 16px;
+}
+
+.btn-trabalho {
+  background-color: #ffffff;
+  color: black;
+}
+
+.btn-contato {
+  background-color: #006fff;
+  color: white;
+}
+
+.apresentacao-txt span {
+  position: absolute;
+}
+
+.apresentacao-txt span::before {
+  color: rgb(0, 111, 255);
+  color: linear-gradient(
+    90deg,
+    rgba(0, 111, 255, 1) 0%,
+    rgba(0, 66, 153, 1) 100%
+  );
+  content: "Henry Lima";
+  margin: 5px;
+}
+
+.apresentacao-txt span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 15px);
+  height: 100%;
+  background-color: #ffffff;
+  border-left: 2px solid;
+  right: -15px;
+  animation: Traço 1s infinite, Sumiu 30s steps(15) infinite;
+  color: orange;
+}
+
+@keyframes Traço {
+  to {
+    border-left: #006fff 3px solid;
+  }
+}
+
+@keyframes Sumiu {
+  10%,
+  15%,
+  20%,
+  25%,
+  30%,
+  35%,
+  40%,
+  45%,
+  50%,
+  55%,
+  60%,
+  65%,
+  70%,
+  75%,
+  80%,
+  85%,
+  90%,
+  95% {
+    width: 0;
+  }
+
+  5%,
+  10%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 15px);
+  }
+}
+
+/* Desenvolvimento */
+
+.Projetos {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cards {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  display: flex;
+  gap: 6px;
+  width: 450px;
+  height: 325px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 450px;
+  height: 325px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.cards h2 {
+  color: #006fff;
+}
+
+.cards-container .linguas {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+  width: 300px;
+  margin-left: 125px;
+}
+
+.cards-container .linguas h4 {
+  color: #006fff;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 2px;
+}
