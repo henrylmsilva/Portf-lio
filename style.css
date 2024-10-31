@@ -206,20 +206,23 @@ a {
 
 .Projetos {
   display: flex;
-  width: 100%;
+  width: 1900px;
+  height: 1080px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
+  padding-bottom: 5rem;
+  /* border: #006fff 2px solid; */
 }
 
 .cards {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   background-color: #ffffff;
-  display: flex;
   gap: 6px;
   width: 450px;
   height: 325px;
+  display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -233,20 +236,7 @@ a {
   justify-content: center;
   flex-direction: row;
   gap: 5rem;
-}
-
-.card1 {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  width: 450px;
-  height: 325px;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 20px;
+  margin-bottom: 10px;
 }
 
 .cards h2 {
@@ -266,4 +256,186 @@ a {
   font-size: 15px;
   text-align: center;
   margin-top: 2px;
+}
+
+.cards2 {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  gap: 6px;
+  width: 450px;
+  height: 325px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.cards-container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.cards-container2 h2 {
+  color: #006fff;
+}
+
+.cards-container2 h4 {
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 2px;
+}
+
+/* HABILIDADES */
+
+.habilidades {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  /* border: #003a86 2px solid; */
+  /* margin-top: rem; */
+}
+
+.habilidades .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* border: #006eff 2px solid; */
+}
+
+.icons .text-icons {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+
+.habilidades .text-icons {
+  color: #000000;
+  font-weight: 400;
+  display: flex;
+}
+
+/* Contatos */
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  height: 35vh;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.row {
+  display: flex;
+  gap: 5rem;
+  flex-direction: row;
+}
+
+.botoes-name {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+}
+
+.botoes-name input {
+  border: 1px solid #0000005e;
+  border-radius: 8px;
+  outline: none;
+}
+
+.botoes-name h4 {
+  display: flex;
+  text-align: center;
+  font-size: 15px;
+  align-items: center;
+  top: 10px;
+  opacity: 1;
+}
+
+.botoes-email {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+}
+
+.botoes-email input {
+  border: 1px solid #0000005e;
+  border-radius: 5px;
+  outline: none;
+}
+
+.botoes-email h4 {
+  display: flex;
+  text-align: center;
+  font-size: 15px;
+  align-items: center;
+  top: 10px;
+  opacity: 1;
+}
+
+.msg {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.msg input {
+  width: 24rem;
+  height: 5rem;
+  border-radius: 5px;
+  border: 1px solid #0000005e;
+  outline: none;
+}
+
+.msg h4 {
+  display: flex;
+  text-align: center;
+  font-size: 15px;
+  align-items: center;
+  top: 10px;
+  opacity: 1;
+}
+
+.contato button {
+  background-color: #006eff;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 20px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.btn-msg:hover {
+  background-color: #003a86;
+}
+
+.direitos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 5vh;
+}
+
+.direitos h4 {
+  font-size: 15px;
 }
